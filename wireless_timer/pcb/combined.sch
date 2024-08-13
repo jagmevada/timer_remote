@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -19126,6 +19126,269 @@ Source: Comchip CGRM4001-G.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="ngspice-simulation" urn="urn:adsk.eagle:library:527439">
+<description>SPICE compatible library parts</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="0" urn="urn:adsk.eagle:symbol:527455/1" library_version="18">
+<description>Simulation ground symbol (spice node 0)</description>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<pin name="0" x="0" y="0" visible="off" length="point" direction="sup"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" urn="urn:adsk.eagle:component:527478/1" prefix="X_" library_version="18">
+<description>Simulation ground symbol (spice node 0)</description>
+<gates>
+<gate name="G$1" symbol="0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="SPICEGROUND" value=""/>
+<attribute name="_EXTERNAL_" value=""/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="TPS63000DRLR">
+<packages>
+<package name="SOTFL50P160X60-8N">
+<text x="-1.315" y="1.5" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-1.315" y="-2.25" size="0.8128" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.115" y1="0.54" x2="-0.355" y2="0.96" layer="29"/>
+<rectangle x1="-1.115" y1="0.04" x2="-0.355" y2="0.46" layer="29"/>
+<rectangle x1="-1.115" y1="-0.46" x2="-0.355" y2="-0.04" layer="29"/>
+<rectangle x1="-1.115" y1="-0.96" x2="-0.355" y2="-0.54" layer="29"/>
+<rectangle x1="0.355" y1="-0.96" x2="1.115" y2="-0.54" layer="29"/>
+<rectangle x1="0.355" y1="-0.46" x2="1.115" y2="-0.04" layer="29"/>
+<rectangle x1="0.355" y1="0.04" x2="1.115" y2="0.46" layer="29"/>
+<rectangle x1="0.355" y1="0.54" x2="1.115" y2="0.96" layer="29"/>
+<wire x1="-0.6" y1="1.05" x2="0.6" y2="1.05" width="0.127" layer="51"/>
+<wire x1="0.6" y1="1.05" x2="0.6" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="0.6" y1="-1.05" x2="-0.6" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="-1.05" x2="-0.6" y2="1.05" width="0.127" layer="51"/>
+<wire x1="-1.315" y1="1.3" x2="1.315" y2="1.3" width="0.05" layer="39"/>
+<wire x1="1.315" y1="1.3" x2="1.315" y2="-1.3" width="0.05" layer="39"/>
+<wire x1="1.315" y1="-1.3" x2="-1.315" y2="-1.3" width="0.05" layer="39"/>
+<wire x1="-1.315" y1="-1.3" x2="-1.315" y2="1.3" width="0.05" layer="39"/>
+<circle x="-1.6" y="0.75" radius="0.1" width="0.2" layer="21"/>
+<circle x="-1.6" y="0.75" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-0.085" y1="1.05" x2="0.085" y2="1.05" width="0.127" layer="21"/>
+<wire x1="0.085" y1="-1.05" x2="-0.085" y2="-1.05" width="0.127" layer="21"/>
+<smd name="1" x="-0.735" y="0.75" dx="0.66" dy="0.32" layer="1" stop="no"/>
+<smd name="2" x="-0.735" y="0.25" dx="0.66" dy="0.32" layer="1" stop="no"/>
+<smd name="3" x="-0.735" y="-0.25" dx="0.66" dy="0.32" layer="1" stop="no"/>
+<smd name="4" x="-0.735" y="-0.75" dx="0.66" dy="0.32" layer="1" stop="no"/>
+<smd name="5" x="0.735" y="-0.75" dx="0.66" dy="0.32" layer="1" stop="no"/>
+<smd name="6" x="0.735" y="-0.25" dx="0.66" dy="0.32" layer="1" stop="no"/>
+<smd name="7" x="0.735" y="0.25" dx="0.66" dy="0.32" layer="1" stop="no"/>
+<smd name="8" x="0.735" y="0.75" dx="0.66" dy="0.32" layer="1" stop="no"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TPS563212DRLR">
+<text x="-5.08" y="10.922" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="-22.86" length="middle" direction="pwr" rot="R90"/>
+<pin name="FB" x="15.24" y="-15.24" length="middle" direction="in" rot="R180"/>
+<pin name="VIN" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="LX1" x="7.62" y="15.24" length="middle" direction="out" rot="R270"/>
+<pin name="LX2" x="-7.62" y="15.24" length="middle" direction="in" rot="R270"/>
+<pin name="EN" x="-15.24" y="-15.24" length="middle"/>
+<pin name="MODE" x="-15.24" y="-12.7" length="middle"/>
+<pin name="VOUT" x="15.24" y="2.54" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TPS563212DRLR" prefix="U">
+<description> &lt;a href="https://pricing.snapeda.com/parts/TPS563212DRLR/Texas%20Instruments/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TPS563212DRLR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOTFL50P160X60-8N">
+<connects>
+<connect gate="G$1" pin="EN" pad="5"/>
+<connect gate="G$1" pin="FB" pad="8"/>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="LX1" pad="3"/>
+<connect gate="G$1" pin="LX2" pad="2"/>
+<connect gate="G$1" pin="MODE" pad="6"/>
+<connect gate="G$1" pin="VIN" pad="4"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/TPS563212DRLR/Texas+Instruments/view-part/?ref=eda"/>
+<attribute name="DESCRIPTION" value=" 4.2-V to 18-V, 3-A, 1.2-MHz, synchronous buck converter with eco-mode and selectable FCCM "/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MP" value="TPS563212DRLR"/>
+<attribute name="PACKAGE" value="SOT-583 Texas Instruments"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=9593796&amp;manufacturer=Texas Instruments&amp;part_name=TPS563212DRLR&amp;search_term=sot-583"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/TPS563212DRLR/Texas+Instruments/view-part/?ref=snap"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="5040_INDUCTOR">
+<packages>
+<package name="IND_74404043220A">
+<text x="-2.76" y="3.34" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-2.725" y="0" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2.725" y="0" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-2.1" y1="2.1" x2="-2.1" y2="-2.1" width="0.127" layer="51"/>
+<wire x1="-0.455" y1="2.1" x2="0.455" y2="2.1" width="0.127" layer="21"/>
+<wire x1="2.1" y1="-2.1" x2="2.1" y2="2.1" width="0.127" layer="51"/>
+<wire x1="2.1" y1="-2.1" x2="-2.1" y2="-2.1" width="0.127" layer="51"/>
+<wire x1="-2.1" y1="2.1" x2="2.1" y2="2.1" width="0.127" layer="51"/>
+<wire x1="0.455" y1="-2.1" x2="-0.455" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="-2.525" y1="2.45" x2="-2.525" y2="-2.45" width="0.05" layer="39"/>
+<wire x1="-2.525" y1="2.45" x2="2.525" y2="2.45" width="0.05" layer="39"/>
+<wire x1="2.525" y1="-2.45" x2="2.525" y2="2.45" width="0.05" layer="39"/>
+<wire x1="2.525" y1="-2.45" x2="-2.525" y2="-2.45" width="0.05" layer="39"/>
+<smd name="1" x="-1.9" y="0" dx="4.5" dy="1.5" layer="1" rot="R90"/>
+<smd name="2" x="1.9" y="0" dx="4.5" dy="1.5" layer="1" rot="R270"/>
+</package>
+</packages>
+<symbols>
+<symbol name="74404043220A">
+<wire x1="-5.08" y1="0" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<text x="-7.112" y="3.048" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-4.318" y1="2.54" x2="-0.762" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="4.318" y2="2.54" width="0.1524" layer="94"/>
+<pin name="1" x="-12.7" y="0" visible="off" length="middle" direction="pas"/>
+<pin name="2" x="12.7" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="5040_INDUCTOR" prefix="L">
+<description>WE-LQS SMT Power Inductor &lt;a href="https://pricing.snapeda.com/parts/74404043220A/Wurth%20Electronics/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="74404043220A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="IND_74404043220A">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/74404043220A/Wurth+Electronics+Inc./view-part/?ref=eda"/>
+<attribute name="DESCRIPTION" value=" 22 µH Semi-Shielded Wirewound Inductor 1.11 A 200mOhm Nonstandard "/>
+<attribute name="MF" value="Wurth Electronics"/>
+<attribute name="MP" value="74404043220A"/>
+<attribute name="PACKAGE" value="Nonstandard Würth Elektronik"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=703901&amp;manufacturer=Wurth Electronics&amp;part_name=74404043220A&amp;search_term=744040"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/74404043220A/Wurth+Electronics+Inc./view-part/?ref=snap"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SS22">
+<packages>
+<package name="DIOM5336X265N">
+<circle x="-3.9" y="0" radius="0.1" width="0.2" layer="21"/>
+<circle x="-3.9" y="0" radius="0.1" width="0.2" layer="51"/>
+<text x="-3.5" y="2.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.5" y="-2.5" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="-3.555" y1="2.063" x2="-3.555" y2="-2.063" width="0.05" layer="39"/>
+<wire x1="-2.2" y1="1.8125" x2="-2.2" y2="-1.8125" width="0.127" layer="51"/>
+<wire x1="-2.2" y1="-1.8125" x2="2.2" y2="-1.8125" width="0.127" layer="51"/>
+<wire x1="2.2" y1="-1.8125" x2="2.2" y2="1.8125" width="0.127" layer="51"/>
+<wire x1="2.2" y1="1.8125" x2="-2.2" y2="1.8125" width="0.127" layer="51"/>
+<wire x1="3.555" y1="2.063" x2="-3.555" y2="2.063" width="0.05" layer="39"/>
+<wire x1="2.2" y1="1.8125" x2="-2.2" y2="1.8125" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="-1.8125" x2="2.2" y2="-1.8125" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="1.8125" x2="-2.2" y2="1.38" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="-1.38" x2="-2.2" y2="-1.8125" width="0.127" layer="21"/>
+<wire x1="2.2" y1="1.8125" x2="2.2" y2="1.38" width="0.127" layer="21"/>
+<wire x1="2.2" y1="-1.38" x2="2.2" y2="-1.8125" width="0.127" layer="21"/>
+<wire x1="3.555" y1="-2.063" x2="3.555" y2="2.063" width="0.05" layer="39"/>
+<wire x1="-3.555" y1="-2.063" x2="3.555" y2="-2.063" width="0.05" layer="39"/>
+<smd name="A" x="2.16" y="0" dx="2.29" dy="2.12" layer="1" roundness="25"/>
+<smd name="C" x="-2.16" y="0" dx="2.29" dy="2.12" layer="1" roundness="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SS22">
+<text x="-5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<pin name="K" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="A" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SS22" prefix="D">
+<description>Diode Schottky 40V 2A Surface Mount DO-214AA (SMB)  &lt;a href="https://pricing.snapeda.com/parts/SS24/ON%20Semiconductor/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SS22" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIOM5336X265N">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/SS24/Onsemi/view-part/?ref=eda"/>
+<attribute name="DESCRIPTION" value=" Diode Schottky 40V 2A Surface Mount DO-214AA (SMB) "/>
+<attribute name="MF" value="ON Semiconductor"/>
+<attribute name="MP" value="SS24"/>
+<attribute name="PACKAGE" value="DO-214AA ON Semiconductor"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=1080652&amp;manufacturer=ON Semiconductor&amp;part_name=SS24&amp;search_term=ss24"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/SS24/Onsemi/view-part/?ref=snap"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -19136,6 +19399,19 @@ Source: Comchip CGRM4001-G.pdf</description>
 <clearance class="0" value="0.254"/>
 </class>
 </classes>
+<groups>
+<schematic_group name="SWI1"/>
+<schematic_group name="SWI2"/>
+<schematic_group name="SWI3"/>
+<schematic_group name="SWI4"/>
+<schematic_group name="SWI5"/>
+<schematic_group name="SWI6"/>
+<schematic_group name="SWI7"/>
+<schematic_group name="SWI8"/>
+<schematic_group name="SWI9"/>
+<schematic_group name="SWI10"/>
+<schematic_group name="SWI11"/>
+</groups>
 <parts>
 <part name="JP3" library="pinhead-2" deviceset="PINHD-1X03" device="_2.54-S"/>
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -19224,22 +19500,36 @@ Source: Comchip CGRM4001-G.pdf</description>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
 <part name="SUPPLY31" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="VDD5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
-<part name="SUPPLY32" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="P+16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1K"/>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1K"/>
 <part name="JP4" library="pinhead-2" deviceset="PINHD-1X02" device="_2.54-S"/>
 <part name="JP2" library="pinhead-2" deviceset="PINHD-1X02" device="_2.54-S"/>
 <part name="VDD6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="VDD7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="30K"/>
-<part name="SUPPLY33" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="CGRM400*-G" device="" package3d_urn="urn:adsk.eagle:package:43457/2" technology="5" value="BAT"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VDD" device=""/>
 <part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="200E"/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VDD" device=""/>
 <part name="VDD3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="U2" library="TPS63000DRLR" deviceset="TPS563212DRLR" device="" value="TPS"/>
+<part name="L1" library="5040_INDUCTOR" deviceset="5040_INDUCTOR" device="" value="1u"/>
+<part name="D2" library="SS22" deviceset="SS22" device=""/>
+<part name="VDD4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VDD" device=""/>
+<part name="X_30" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
+<part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
+<part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
+<part name="X_39" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="X_38" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="X_40" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="X_41" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="R38" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="511K"/>
+<part name="R39" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="91K"/>
+<part name="X_44" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="R42" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="50K"/>
+<part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="X_47" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="R45" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="50K"/>
 </parts>
 <sheets>
 <sheet>
@@ -19550,16 +19840,6 @@ Source: Comchip CGRM4001-G.pdf</description>
 <instance part="VDD5" gate="VCC" x="-6.858" y="-39.878" smashed="yes">
 <attribute name="VALUE" x="-9.398" y="-42.418" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C8" gate="G$1" x="-24.13" y="-17.272" smashed="yes">
-<attribute name="NAME" x="-22.606" y="-16.891" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-20.574" y="-27.813" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="SUPPLY32" gate="GND" x="-24.13" y="-24.892" smashed="yes">
-<attribute name="VALUE" x="-26.035" y="-26.797" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="P+16" gate="VCC" x="-24.13" y="-10.922" smashed="yes">
-<attribute name="VALUE" x="-26.67" y="-14.732" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="R16" gate="G$1" x="41.148" y="-244.094" smashed="yes" rot="R180">
 <attribute name="NAME" x="38.1" y="-241.7826" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="46.736" y="-241.808" size="1.778" layer="96" rot="R180"/>
@@ -19581,13 +19861,6 @@ Source: Comchip CGRM4001-G.pdf</description>
 </instance>
 <instance part="VDD7" gate="VCC" x="-88.138" y="-53.594" smashed="yes">
 <attribute name="VALUE" x="-90.17" y="-56.388" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R20" gate="G$1" x="24.892" y="39.878" smashed="yes" rot="R90">
-<attribute name="NAME" x="23.3934" y="36.068" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="21.082" y="36.068" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="SUPPLY33" gate="GND" x="24.892" y="30.988" smashed="yes">
-<attribute name="VALUE" x="22.987" y="29.083" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="D1" gate="G$1" x="-40.894" y="57.912" smashed="yes">
 <attribute name="NAME" x="-41.91" y="64.2366" size="1.778" layer="95"/>
@@ -19757,10 +20030,6 @@ Source: Comchip CGRM4001-G.pdf</description>
 <pinref part="C11" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="SUPPLY32" gate="GND" pin="GND"/>
-<pinref part="C8" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="SUPPLY26" gate="GND" pin="GND"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="-58.42" y1="15.24" x2="-58.42" y2="16.51" width="0.1524" layer="91"/>
@@ -19780,11 +20049,6 @@ Source: Comchip CGRM4001-G.pdf</description>
 <wire x1="90.17" y1="49.53" x2="100.076" y2="49.53" width="0.1524" layer="91"/>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
 <wire x1="100.076" y1="49.53" x2="100.076" y2="48.006" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY33" gate="GND" pin="GND"/>
-<pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="24.892" y1="33.528" x2="24.892" y2="34.798" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -19886,11 +20150,6 @@ Source: Comchip CGRM4001-G.pdf</description>
 <pinref part="P+14" gate="VCC" pin="VCC"/>
 <pinref part="C9" gate="G$1" pin="+"/>
 <wire x1="-40.64" y1="-15.24" x2="-40.64" y2="-16.51" width="0.4064" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+16" gate="VCC" pin="VCC"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="-24.13" y1="-13.462" x2="-24.13" y2="-14.732" width="0.4064" layer="91"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="1"/>
@@ -20248,13 +20507,9 @@ Source: Comchip CGRM4001-G.pdf</description>
 </net>
 <net name="SHDN" class="0">
 <segment>
-<wire x1="33.02" y1="45.72" x2="24.892" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="45.72" x2="22.352" y2="45.72" width="0.1524" layer="91"/>
 <label x="22.352" y="45.72" size="0.762" layer="95" rot="R180" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="PB5"/>
-<pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="24.892" y1="45.72" x2="22.352" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="24.892" y1="44.958" x2="24.892" y2="45.72" width="0.1524" layer="91"/>
-<junction x="24.892" y="45.72"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -20266,10 +20521,201 @@ Source: Comchip CGRM4001-G.pdf</description>
 </net>
 </nets>
 </sheet>
+<sheet>
+<description>1</description>
+<plain>
+</plain>
+<instances>
+<instance part="U2" gate="G$1" x="-10.922" y="-82.296" smashed="yes">
+<attribute name="NAME" x="-16.002" y="-71.374" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-21.082" y="-102.616" size="1.778" layer="96"/>
+</instance>
+<instance part="L1" gate="G$1" x="-10.668" y="-58.674" smashed="yes">
+<attribute name="NAME" x="-11.9888" y="-55.372" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-11.684" y="-60.706" size="1.778" layer="96"/>
+</instance>
+<instance part="D2" gate="G$1" x="-43.434" y="-79.756" smashed="yes">
+<attribute name="NAME" x="-48.514" y="-77.216" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-48.514" y="-83.566" size="1.778" layer="96"/>
+</instance>
+<instance part="VDD4" gate="G$1" x="-50.8" y="-74.295" smashed="yes">
+<attribute name="VALUE" x="-53.0606" y="-73.9394" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="X_30" gate="G$1" x="-10.922" y="-106.426" smashed="yes"/>
+<instance part="C17" gate="G$1" x="-26.924" y="-84.836" smashed="yes">
+<attribute name="NAME" x="-31.466" y="-85.231" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-32.766" y="-88.519" size="1.778" layer="96"/>
+</instance>
+<instance part="C18" gate="G$1" x="13.97" y="-83.82" smashed="yes">
+<attribute name="NAME" x="9.428" y="-84.215" size="1.778" layer="95"/>
+<attribute name="VALUE" x="8.128" y="-87.503" size="1.778" layer="96"/>
+</instance>
+<instance part="C19" gate="G$1" x="21.844" y="-83.82" smashed="yes">
+<attribute name="NAME" x="17.302" y="-84.215" size="1.778" layer="95"/>
+<attribute name="VALUE" x="16.002" y="-87.503" size="1.778" layer="96"/>
+</instance>
+<instance part="X_39" gate="G$1" x="-26.924" y="-91.186" smashed="yes"/>
+<instance part="X_38" gate="G$1" x="13.97" y="-90.17" smashed="yes"/>
+<instance part="X_40" gate="G$1" x="21.844" y="-90.17" smashed="yes"/>
+<instance part="X_41" gate="G$1" x="6.35" y="-110.998" smashed="yes"/>
+<instance part="R38" gate="G$1" x="6.35" y="-88.392" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.0424" y="-96.647" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="4.572" y="-90.424" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R39" gate="G$1" x="6.35" y="-104.648" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.9314" y="-107.188" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="4.572" y="-106.68" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="X_44" gate="G$1" x="-48.387" y="-106.5022" smashed="yes"/>
+<instance part="R42" gate="G$1" x="-48.387" y="-100.1522" smashed="yes" rot="R90">
+<attribute name="NAME" x="-44.8056" y="-102.6922" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-50.165" y="-102.1842" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+5" gate="VCC" x="21.844" y="-75.9206" smashed="yes">
+<attribute name="VALUE" x="20.574" y="-75.4126" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="X_47" gate="G$1" x="-30.8356" y="-110.6424" smashed="yes"/>
+<instance part="R45" gate="G$1" x="-30.8356" y="-104.2924" smashed="yes" rot="R90">
+<attribute name="NAME" x="-27.2542" y="-106.8324" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-32.6136" y="-106.3244" size="1.778" layer="96" rot="R90"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="X_30" gate="G$1" pin="0"/>
+<wire x1="-10.922" y1="-105.156" x2="-10.922" y2="-106.426" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<label x="-11.938" y="-112.141" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X_39" gate="G$1" pin="0"/>
+<wire x1="-26.924" y1="-89.916" x2="-26.924" y2="-91.186" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<label x="-33.8074" y="-93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X_38" gate="G$1" pin="0"/>
+<wire x1="13.97" y1="-88.9" x2="13.97" y2="-90.17" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="2"/>
+<label x="10.5664" y="-95.2246" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X_40" gate="G$1" pin="0"/>
+<wire x1="21.844" y1="-88.9" x2="21.844" y2="-90.17" width="0.1524" layer="91"/>
+<pinref part="C19" gate="G$1" pin="2"/>
+<label x="20.8788" y="-95.3516" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X_41" gate="G$1" pin="0"/>
+<wire x1="6.35" y1="-109.728" x2="6.35" y2="-110.998" width="0.1524" layer="91"/>
+<pinref part="R39" gate="G$1" pin="1"/>
+<label x="7.7216" y="-114.2238" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X_44" gate="G$1" pin="0"/>
+<wire x1="-48.387" y1="-105.2322" x2="-48.387" y2="-106.5022" width="0.1524" layer="91"/>
+<pinref part="R42" gate="G$1" pin="1"/>
+<label x="-26.8732" y="-113.03" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X_47" gate="G$1" pin="0"/>
+<wire x1="-30.8356" y1="-109.3724" x2="-30.8356" y2="-110.6424" width="0.1524" layer="91"/>
+<pinref part="R45" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="VOUT"/>
+<pinref part="C19" gate="G$1" pin="1"/>
+<wire x1="4.318" y1="-79.756" x2="6.35" y2="-79.756" width="0.1524" layer="91"/>
+<wire x1="6.35" y1="-79.756" x2="13.97" y2="-79.756" width="0.1524" layer="91"/>
+<wire x1="13.97" y1="-79.756" x2="21.844" y2="-79.756" width="0.1524" layer="91"/>
+<wire x1="21.844" y1="-79.756" x2="21.844" y2="-81.28" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="13.97" y1="-81.28" x2="13.97" y2="-79.756" width="0.1524" layer="91"/>
+<junction x="13.97" y="-79.756"/>
+<pinref part="R38" gate="G$1" pin="2"/>
+<wire x1="6.35" y1="-83.312" x2="6.35" y2="-79.756" width="0.1524" layer="91"/>
+<junction x="6.35" y="-79.756"/>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+<wire x1="21.844" y1="-78.4606" x2="21.844" y2="-79.756" width="0.1524" layer="91"/>
+<junction x="21.844" y="-79.756"/>
+</segment>
+</net>
+<net name="LX1" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="LX1"/>
+<wire x1="-3.302" y1="-67.056" x2="-3.302" y2="-64.262" width="0.1524" layer="91"/>
+<wire x1="-3.302" y1="-64.262" x2="2.032" y2="-64.262" width="0.1524" layer="91"/>
+<pinref part="L1" gate="G$1" pin="2"/>
+<wire x1="2.032" y1="-64.262" x2="2.032" y2="-58.674" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LX2" class="0">
+<segment>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="-23.368" y1="-58.674" x2="-23.368" y2="-65.024" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="LX2"/>
+<wire x1="-23.368" y1="-65.024" x2="-18.542" y2="-65.024" width="0.1524" layer="91"/>
+<wire x1="-18.542" y1="-65.024" x2="-18.542" y2="-67.056" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VINPUT" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="VIN"/>
+<pinref part="D2" gate="G$1" pin="K"/>
+<wire x1="-26.924" y1="-79.756" x2="-26.162" y2="-79.756" width="0.1524" layer="91"/>
+<wire x1="-38.354" y1="-79.756" x2="-26.924" y2="-79.756" width="0.1524" layer="91"/>
+<junction x="-26.924" y="-79.756"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="-26.924" y1="-82.296" x2="-26.924" y2="-79.756" width="0.1524" layer="91"/>
+<label x="-29.972" y="-80.1878" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="VDD" class="0">
+<segment>
+<pinref part="VDD4" gate="G$1" pin="VDD"/>
+<wire x1="-50.8" y1="-79.756" x2="-50.8" y2="-76.835" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="-48.514" y1="-79.756" x2="-50.8" y2="-79.756" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="R38" gate="G$1" pin="1"/>
+<pinref part="R39" gate="G$1" pin="2"/>
+<wire x1="6.35" y1="-93.472" x2="6.35" y2="-97.536" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="FB"/>
+<wire x1="6.35" y1="-97.536" x2="6.35" y2="-99.568" width="0.1524" layer="91"/>
+<wire x1="4.318" y1="-97.536" x2="6.35" y2="-97.536" width="0.1524" layer="91"/>
+<junction x="6.35" y="-97.536"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="MODE"/>
+<pinref part="R42" gate="G$1" pin="2"/>
+<wire x1="-26.162" y1="-94.996" x2="-40.005" y2="-94.996" width="0.1524" layer="91"/>
+<wire x1="-40.005" y1="-94.996" x2="-48.387" y2="-95.0722" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SHDN" class="0">
+<segment>
+<label x="-33.909" y="-97.536" size="0.762" layer="95" rot="R180" xref="yes"/>
+<wire x1="-30.8356" y1="-97.536" x2="-33.909" y2="-97.536" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="EN"/>
+<wire x1="-26.162" y1="-97.536" x2="-30.734" y2="-97.536" width="0.1524" layer="91"/>
+<pinref part="R45" gate="G$1" pin="2"/>
+<wire x1="-30.734" y1="-97.536" x2="-30.8356" y2="-97.536" width="0.1524" layer="91"/>
+<wire x1="-30.8356" y1="-99.2124" x2="-30.8356" y2="-97.536" width="0.1524" layer="91"/>
+</segment>
+</net>
+</nets>
+</sheet>
 </sheets>
-<errors>
-<approved hash="104,1,33.02,64.77,U1,VDD,VCC,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
@@ -20287,6 +20733,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.5" severity="warning">
+Since Version 9.5, EAGLE supports persistent groups with
+schematics, and board files. Those persistent groups
+will not be understood (or retained) with this version.
 </note>
 <note version="8.4" severity="warning">
 Since Version 8.4, EAGLE supports properties for SPICE simulation. 

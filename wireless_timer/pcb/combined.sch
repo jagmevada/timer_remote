@@ -19224,9 +19224,6 @@ Source: Comchip CGRM4001-G.pdf</description>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
 <part name="SUPPLY31" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="VDD5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
-<part name="SUPPLY32" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="P+16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1K"/>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1K"/>
 <part name="JP4" library="pinhead-2" deviceset="PINHD-1X02" device="_2.54-S"/>
@@ -19550,16 +19547,6 @@ Source: Comchip CGRM4001-G.pdf</description>
 <instance part="VDD5" gate="VCC" x="-6.858" y="-39.878" smashed="yes">
 <attribute name="VALUE" x="-9.398" y="-42.418" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C8" gate="G$1" x="-24.13" y="-17.272" smashed="yes">
-<attribute name="NAME" x="-22.606" y="-16.891" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-20.574" y="-27.813" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="SUPPLY32" gate="GND" x="-24.13" y="-24.892" smashed="yes">
-<attribute name="VALUE" x="-26.035" y="-26.797" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="P+16" gate="VCC" x="-24.13" y="-10.922" smashed="yes">
-<attribute name="VALUE" x="-26.67" y="-14.732" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="R16" gate="G$1" x="41.148" y="-244.094" smashed="yes" rot="R180">
 <attribute name="NAME" x="38.1" y="-241.7826" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="46.736" y="-241.808" size="1.778" layer="96" rot="R180"/>
@@ -19757,10 +19744,6 @@ Source: Comchip CGRM4001-G.pdf</description>
 <pinref part="C11" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="SUPPLY32" gate="GND" pin="GND"/>
-<pinref part="C8" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="SUPPLY26" gate="GND" pin="GND"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="-58.42" y1="15.24" x2="-58.42" y2="16.51" width="0.1524" layer="91"/>
@@ -19886,11 +19869,6 @@ Source: Comchip CGRM4001-G.pdf</description>
 <pinref part="P+14" gate="VCC" pin="VCC"/>
 <pinref part="C9" gate="G$1" pin="+"/>
 <wire x1="-40.64" y1="-15.24" x2="-40.64" y2="-16.51" width="0.4064" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+16" gate="VCC" pin="VCC"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="-24.13" y1="-13.462" x2="-24.13" y2="-14.732" width="0.4064" layer="91"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="1"/>
